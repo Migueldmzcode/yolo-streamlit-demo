@@ -82,9 +82,9 @@ def detectar(modelo: YOLO, img: Image.Image, conf: float, iou: float):
 # 3. Interfaz
 # ---------------------------------------------------------------------------
 st.title("🔎 Detector de objetos con YOLO")
+st.markdown("**Dr. Miguel Angel Domínguez González**")
 st.caption("Sube una imagen y el modelo identificará los objetos que contiene "
            "(80 clases del conjunto COCO: personas, autos, perros, sillas, laptops…).")
-
 with st.sidebar:
     st.header("⚙️ Parámetros")
     etiqueta_modelo = st.selectbox("Modelo", list(MODELOS_DISPONIBLES))
