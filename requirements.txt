@@ -1,0 +1,10 @@
+# Índice adicional con PyTorch solo-CPU: evita descargar ~2 GB de librerías CUDA
+# que no se usan en Streamlit Community Cloud (no tiene GPU).
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
+ultralytics>=8.4,<9
+streamlit>=1.50
+opencv-python-headless
+pillow
+pandas
